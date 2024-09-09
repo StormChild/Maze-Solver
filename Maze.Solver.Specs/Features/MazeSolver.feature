@@ -4,7 +4,7 @@ As a human player, I would like to load, solve and recall 20x20 text based puzzl
 
 @current
 Scenario: Loading a maze
-	Given I have the following maze
+	When I parse the following maze
 """
 S_________
 *XXXXXXXX*
@@ -17,7 +17,6 @@ S_________
 *X*_______
 XXXXXXXXG_
 """
-	When I parse the maze
 	Then I should have the following maze as the current maze
 """
 S_________

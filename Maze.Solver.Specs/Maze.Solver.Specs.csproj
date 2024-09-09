@@ -20,4 +20,8 @@
     <Folder Include="Support\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Maze.Solver\Maze.Solver.csproj" />
+  </ItemGroup>
+
 </Project>

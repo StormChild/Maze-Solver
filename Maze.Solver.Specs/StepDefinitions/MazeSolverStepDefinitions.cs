@@ -6,22 +6,19 @@ namespace Maze.Solver.Specs.StepDefinitions
     [Binding]
     public class MazeSolverStepDefinitions
     {
-        [Given(@"I have the following maze")]
-        public void GivenIHaveTheFollowingMaze(string multilineText)
+        Maze _maze = new Maze();
+        
+        [When(@"I parse the following maze")]
+        public void WhenIParseTheFollowingMaze(string maze)
         {
-            throw new PendingStepException();
+            _maze.parse(maze);
         }
 
-        [When(@"I parse the maze")]
-        public void WhenIParseTheMaze()
-        {
-            throw new PendingStepException();
-        }
 
         [Then(@"I should have the following maze as the current maze")]
-        public void ThenIShouldHaveTheFollowingMazeAsTheCurrentMaze(string multilineText)
+        public void ThenIShouldHaveTheFollowingMazeAsTheCurrentMaze(string maze)
         {
-            throw new PendingStepException();
+            maze.Should().Be(_maze.current_maze);
         }
     }
 }
