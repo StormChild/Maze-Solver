@@ -60,13 +60,13 @@ namespace Maze.Solver
         {
             /* 
              * 1. If Im not on a journey initialize the journey at starting point
-             * 2. Look for ajacent open blocks (explored = false and open = true)
-             * 3. If there are multiple open blocks I'm a junction
+             * 2. Look for ajacent open tiles (explored = false and open = true)
+             * 3. If there are multiple open tiles, this a junction
              * 4. Move to the first clockwise open tile (obviously not outside boundries)
              * 5. If it is the goal, this is the end
-             * 6. If there are no open blocks this is a dead end, move back to the last junction and decrement the ajacent_open_tiles by 1 and remove the list of the journey up to the junction then back to 2.
+             * 6. If there are no open tiles this is a dead end, move back to the last junction and decrement the ajacent_open_tiles by 1 and remove the list of the journey up to the junction tile then back to 2.
              * 7. If the junction has no more unexplored branches (ajacent open tiles) remove the junction status from the journey and move back another junction.
-             * 7. If I am out of open blocks and haven't found the goal, this maze is unsolvable.
+             * 7. If I am out of open tiles and haven't found the goal, this maze is unsolvable.
              */
 
             return true;
