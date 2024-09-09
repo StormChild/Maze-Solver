@@ -1,8 +1,14 @@
 # Maze Solver
 
+## Requirements
+
+Visual Studion 2022
+Specflow Extension for Visual Studio 2022
+
 ## Introduction
 
-As this is a test, I thought I'd use the time to show off BDD style testing and development. Unfortunately I don't have enough time to complete the assignment at the moment.
+As a caveat I don't think this test id doable in one hour, just writing the tests will take more than than never mind solving the problems.
+I thought I'd use the time to show off BDD style testing and development. Unfortunately I spent too much time on it already.
 
 So what I have done is the following:
 
